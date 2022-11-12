@@ -46,4 +46,16 @@ class TransactionBST_ST {
 		System.out.print(root.data + " ");
 		IteratingTree(root.right);
 	}
+	
+	// Hardcoded the tree
+	void displaySkewedTree() {
+		System.out.print("Converted the BST into a Skewed Tree:: ");
+		node = new Node(50);
+		node.left = new Node(30);
+		node.right = new Node(60);
+		node.left.left = new Node(10);
+		node.right.left = new Node(55);
+		UpdatingTree(node);
+		IteratingTree(newHead);
+	}
 }

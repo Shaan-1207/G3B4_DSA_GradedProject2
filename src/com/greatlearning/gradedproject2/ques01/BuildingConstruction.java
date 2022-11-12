@@ -1,11 +1,11 @@
 package com.greatlearning.gradedproject2.ques01;
+
 import java.util.*;
 
 public class BuildingConstruction {
 	public Integer totalFloors;
 	public Integer[] totalFloorSize;
 
-	// Get the Inputs using below method.
 	public void getInputs() {
 		System.out.println("Enter the total no. of floors in the building: ");
 		Scanner sc = new Scanner(System.in);
@@ -29,8 +29,7 @@ public class BuildingConstruction {
 
 		Stack<Integer> myStack = new Stack<Integer>();
 
-		// Loop over the unsorted data and when you see the entry is matched then pop
-		// all Stack elements
+		// Loop over the unsorted data and when you see the entry is matched then pop all Stack elements
 		for (int i = 0; i < totalFloorSize.length; i++) {
 			if (totalFloorSize[i] == FloorSizeSorted[j]) {
 				if (i == totalFloorSize.length - 1)
@@ -51,7 +50,7 @@ public class BuildingConstruction {
 							break;
 						}
 					}
-					System.out.println("");
+					System.out.println(" ");
 
 				} else {
 					System.out.println(totalFloorSize[i]);
@@ -60,7 +59,7 @@ public class BuildingConstruction {
 			} else
 			// Add the element to Stack
 			{
-				System.out.println("Day: " + (i + 1));
+				System.out.println("Day:" + (i + 1));
 				myStack.push(totalFloorSize[i]);
 				System.out.println();
 			}
